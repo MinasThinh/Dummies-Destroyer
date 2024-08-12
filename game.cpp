@@ -250,7 +250,7 @@ class Player {
         }
     }
     void display_eqRarity() {
-        cout << "--[Equipments Quality Chance]--\n"
+        cout << "--[Equipments Quality Chance]--\n";
         vector<int> qualchances = EQ_RARITY_TABLE[UPGRADES["Lucky"]-1];
         for(int i = 0;i<qualchances.size();++i) {
             cout << EquipmentQualities[i] << " - " << qualchances[i] << "%\n";
@@ -1300,7 +1300,7 @@ void Save() {
 }
 void GameSystem() {
     system("cls");    
-    cout << "Welcome to Knight Cutter!\n";
+    cout << "Welcome to Dummies Destoryer!\n";
     cout << GAME_TIPS[rand() % GAME_TIPS.size()] << '\n';
     cout << "--------[SYSTEM]--------" << '\n';    
     cout << "[1] Character" << '\n';    
